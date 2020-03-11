@@ -1,0 +1,242 @@
+.tab-content
+{
+    display: none;
+    color: #777;
+    line-height: 26px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    padding: 2rem;
+    
+}
+.sec1-main input
+{
+display: none;
+}
+.cards
+{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    row-gap: 0.5rem;
+}
+#acc1-c1:checked ~   .cards .tab-con .tab1
+{
+    display: grid;
+}
+#acc1-c2:checked ~ .cards  .tab-con .tab2
+{
+    display: grid;
+}
+#acc1-c3:checked ~ .cards  .tab-con .tab3
+{
+    display: grid;
+}
+.cards label
+{
+    color: #0088CC;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    font-family: "Open Sans", Arial, sans-serif;
+   
+}
+.tab-head
+{
+    background-color: rgba(0,0,0,.03);
+    padding: 0.5rem 1rem;
+}
+.tab-con
+{
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: .25rem;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.sec2-main img
+{
+
+    width: 100%;
+    height:auto;
+}
+
+
+.sec2-tab1,.sec2-tab2,.sec2-tab3
+{
+    position: relative;
+    width: 800px;
+    
+
+}
+.sec2-main i
+{
+    font-size: 2rem;
+}
+.left-label
+{
+    position: absolute;
+    top: 50%;
+    background-color: rgba(38, 42, 47, 0.4) !important;
+    color: white;
+    width: 28px;
+    height: 32px;
+    text-align: center;
+}
+.right-label
+{
+position: absolute;
+right: 0;
+top: 50%;
+background-color: rgba(38, 42, 47, 0.4) !important;
+color: #ffffff;
+    width: 28px;
+    height: 32px;
+    text-align: center;
+}
+
+.sec2-tab1,.sec2-tab2,.sec2-tab3
+{
+    display: none;
+}
+
+#sec2-p1:checked ~ .sec2-tab3
+{
+    display: grid;
+}
+#sec2-n1:checked ~ .sec2-tab2
+{
+    display: grid;
+}
+#sec2-p2:checked ~ .sec2-tab1
+{
+    display: grid;
+}
+#sec2-n2:checked ~.sec2-tab3
+{
+    display: grid;
+}
+
+#sec2-p3:checked ~ .sec2-tab2
+{
+    display: grid;
+}
+#sec2-n3:checked ~.sec2-tab1
+{
+    display: grid;
+}
+.sec2-main input
+{
+    display: none;
+}
+.sec2-main
+{
+    display: grid;
+    justify-content: center;
+}
+
+
+/*section3////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.sec3-label
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+   
+  
+}
+.sec3-label label
+{
+   
+    
+    color: #0088CC;
+    
+    line-height: 33px;
+    padding: 14px;
+    cursor:pointer;
+}
+.section3 input
+{
+    display: none;
+}
+
+
+
+.sec3-tab1,.sec3-tab2
+{
+    display: none;
+    padding: 1.5rem;
+    border-radius: 4px 4px ;
+}
+#sec3-r1:checked ~ .sec3-tab1
+{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 1rem;
+    border: 1px solid #EEE;
+}
+#sec3-r2:checked ~ .sec3-tab2
+{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 1rem;
+    border: 1px solid #EEE;
+    
+}
+
+#sec3-r1:checked ~  .sec3-label .l1
+{
+   border-top: 2px solid #0088CC;
+  
+  border-radius: 4px 4px;
+  background: #f7f7f7;
+ 
+  
+}
+#sec3-r2:checked ~  .sec3-label .l2
+{
+   border-top: 3px solid #0088CC;
+   border-radius: 4px 4px;
+   background: #f7f7f7;
+  
+   
+}
+
+.l1,.l2
+{
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-top: 3px solid #CCC;
+    border-radius: 4px 4px 0 0;
+   
+}
+.sec3-f1
+{
+    color: #777;
+    line-height: 26px;
+    font-size: 13px;
+}
+.sec3-f2
+{
+    color: #777;
+    line-height: 26px;
+}
+.section3
+{
+    width: 50%;
+    padding: 2rem 5rem;
+}
+
+@media only screen and  (max-width:768px)
+{
+    .sec2-tab1,.sec2-tab2,.sec2-tab3
+{
+    position: relative;
+    width: 100%;
+    
+
+}
+}
